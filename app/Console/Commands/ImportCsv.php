@@ -64,6 +64,7 @@ class ImportCsv extends Command
             } catch (IncorrectFileFormatException $e) {
                 $this->info($e->getMessage());
                 $this->error('Ваш файл не CSV формата');
+                return;
             }
 
             $records = $this->dataProvider->getData($filePath);
