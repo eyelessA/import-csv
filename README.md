@@ -6,12 +6,17 @@
 - Composer.
 - Фреймворк Laravel.
 - Файл должен лежать по пути: storage/app/import
+- Разделитеть в файле должен быть: "<b>точка с запятой - ;</b>"
 
 ## Возможности
 - Импорт данных: Импорт данных из CSV файла в базу данных.
 - Режим очистки базы данных: Очистка базы данных перед импортом новых данных.
 
 ## Команды
+- composer install
+- php artisan migrate
 - Запуск ипорта - php artisan app:import example_import_file.csv
 - Очистка БД php artisan app:import example_import_file.csv --clear-mode
+
+
 
